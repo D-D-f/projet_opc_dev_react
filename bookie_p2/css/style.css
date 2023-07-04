@@ -71,6 +71,7 @@ header nav ul {
 .input_search {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .input_search button {
@@ -103,6 +104,7 @@ header nav ul {
 .filtres {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .filtres p {
@@ -130,6 +132,7 @@ header nav ul {
 .information {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .information span:first-child {
@@ -140,9 +143,14 @@ header nav ul {
   height: 20px;
   border-radius: 20px;
   border: 1px solid var(--main-bg-color);
+  margin-right: 5px;
 }
 
 .information span i {
+  font-size: 10px;
+}
+
+.information span:last-child {
   font-size: 10px;
 }
 
