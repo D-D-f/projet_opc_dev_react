@@ -7,6 +7,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --hover-color: #deebff;
 }
 
 .fa-solid {
@@ -31,6 +32,8 @@ body {
   box-sizing: border-box;
 }
 
+/*  HEADER */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -44,16 +47,13 @@ header h1 img {
 header nav ul {
   display: flex;
   list-style: none;
+  gap: 50px;
 }
 
 header nav ul li {
   border-top: 2px solid transparent;
   padding-top: 10px;
   cursor: pointer;
-}
-
-header nav ul li:first-child {
-  margin-right: 40px;
 }
 
 header nav ul li:hover {
@@ -64,6 +64,86 @@ header nav ul li:hover {
 header nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+/* Section filtre */
+
+.input_search {
+  display: flex;
+  align-items: center;
+}
+
+.input_search button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.icon_location {
+  background-color: var(--main-bg-color);
+  padding: 13px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.icon_location i {
+  color: black;
+}
+
+.input {
+  font-weight: bold;
+  padding: 13px;
+  border: none;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+}
+
+.filtres p {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.filtres ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.filtres ul li {
+  border: 3px solid var(--main-bg-color);
+  padding: 10px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filtres ul li:hover {
+  background-color: var(--hover-color);
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--main-bg-color);
+}
+
+.information span i {
+  font-size: 10px;
 }
 
 @media screen and (max-width: 768px) {
