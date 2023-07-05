@@ -234,13 +234,46 @@ main {
   object-fit: cover;
 }
 
+.container_marseille p:last-child {
+  font-weight: bold;
+}
+
+/* SECTION POPULAR */
+
 .titleMostPopular {
   display: flex;
   justify-content: space-between;
 }
 
-.container_marseille p:last-child {
-  font-weight: bold;
+.containerPopular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.cardPopular {
+  display: flex;
+  align-items: center;
+  height: 146px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.infoPopularCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.imgPopular {
+  object-fit: cover;
+  width: 123px;
+  height: 136px;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 1024px) {
