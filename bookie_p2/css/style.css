@@ -359,6 +359,27 @@ main {
   padding: 20px;
 }
 
+/* FOOTER */
+
+footer {
+  display: flex;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+}
+
+footer ul {
+  width: 33%;
+  list-style: none;
+}
+
+footer ul li:first-child {
+  font-weight: bold;
+}
+
+footer ul li {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .main-container {
     padding: 0 20px;
@@ -524,5 +545,14 @@ main {
   .sectionActivite {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    width: 100%;
+    margin-top: 20px;
   }
 }
