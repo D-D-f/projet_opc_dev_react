@@ -244,65 +244,83 @@ main {
 
 /* SECTION POPULAR */
 
-.titleMostPopular {
-  display: flex;
-  justify-content: space-between;
-}
-
-.containerPopular {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 2;
-}
-
-.allCardPopular {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin-top: 10px;
-}
-
 .cardPopular {
   display: flex;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.titlePricePopular p {
-  font-size: 0.8em;
-  margin-top: 4px;
+.cardPopular img {
+  object-fit: cover;
 }
 
-.titlePricePopular h4 {
-  font-size: 0.9em;
+.card-title {
+  font-size: 16px;
 }
 
-.infoPopularCard {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+.euro {
+  font-weight: 700;
 }
 
-.infoPopularCard .stars span:last-child i {
+.neutralStar {
   color: var(--main-bg-color);
 }
 
-.imgPopular {
-  object-fit: cover;
-  width: 100px;
-  height: 146px;
-  margin-right: 5px;
+.populaires {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  width: 32%;
+}
+
+.populaires-cards {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.populaires-cards img {
+  width: 33%;
+  height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -317,13 +335,35 @@ main {
     display: flex;
     flex-direction: column;
   }
-  .allCardPopular {
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .populaires-cards {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: space-between;
   }
-  .cardPopular {
-    width: calc(35% - 10px);
+
+  .populaires-cards .card {
+    width: 30%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
   }
 }
 
@@ -416,15 +456,9 @@ main {
   .container_marseille {
     background-color: white;
   }
-  .allCardPopular {
+
+  .populaires-cards {
+    display: flex;
     flex-direction: column;
-  }
-  .cardPopular {
-    width: 100%;
-  }
-  .infoPopularCard {
-    padding: 20px 0;
-    height: 146px;
-    margin-left: 20px;
   }
 }
