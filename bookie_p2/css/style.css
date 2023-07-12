@@ -44,19 +44,24 @@ header h1 img {
   height: 19px;
 }
 
+header nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
   gap: 50px;
 }
 
-header nav ul li {
+header nav ul a li {
   border-top: 2px solid transparent;
   padding-top: 10px;
   cursor: pointer;
 }
 
-header nav ul li:hover {
+header nav ul a li:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
@@ -209,6 +214,11 @@ main {
   margin-bottom: 20px;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -243,9 +253,12 @@ main {
 }
 
 /* SECTION POPULAR */
-
-.cardPopular {
+.populaires-cards a {
+  text-decoration: none;
+  color: black;
   display: flex;
+}
+.cardPopular {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
@@ -344,6 +357,11 @@ main {
   width: 25%;
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cardActivite a {
+  text-decoration: none;
+  color: black;
 }
 
 .cardActivite img {
